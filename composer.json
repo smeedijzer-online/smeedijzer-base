@@ -1,0 +1,39 @@
+{
+  "name": "smeedijzer-online/smeedijzer-base",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "A plugin that modifies some core functionality of WordPress",
+  "homepage": "https://github.com/smeedijzer-online/smeedijzer-base",
+  "authors": [
+    {
+      "name": "Smeedijzer",
+      "homepage": "https://github.com/smeedijzer-online"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/smeedijzer-online/smeedijzer-base/issues"
+  },
+  "require": {
+    "php": "^8.0",
+    "composer/installers": "^v2.3.0",
+    "yahnis-elsts/plugin-update-checker": "^5.5"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "archive" : {
+    "exclude": [
+      ".gitignore"
+    ]
+  }
+}
