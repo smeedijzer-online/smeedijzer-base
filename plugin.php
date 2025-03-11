@@ -4,7 +4,7 @@
  * Plugin Name: Core Functionality Plugin
  * Plugin URI:  https://github.com/smeedijzer-online/smeedijzer-base
  * Description: A plugin that modifies some core functionality of WordPress
- * Version:     0.0.1
+ * Version:     0.0.2
  * Author:      Smeedijzer
  * Author URI:  https://github.com/smeedijzer-online
  * Licence:     MIT
@@ -25,10 +25,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 if (file_exists(__DIR__ . '/vendor/autoload.php')) {
     require_once __DIR__ . '/vendor/autoload.php';
 } else {
-    throw new \RuntimeException('Autoload does not exist.');
+    throw new \RuntimeException('Autoloader does not exist.');
 }
-
-
 
 $updateChecker = PucFactory::buildUpdateChecker(
     'https://github.com/smeedijzer-online/smeedijzer-base',
